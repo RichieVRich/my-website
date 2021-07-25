@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Test </title>
+		{{#each style}}
+		<link rel="stylesheet" href={{this}}>
+		{{/each}}
+		{{#each java}}
+			<script type="text/javascript" src={{this}}>
+			</script>
+		{{/each}}
+
+		{{#each jsscript}}
+		<script src="/static/{{this}}"></script>
+		{{/each}}
+	</head>
+	<body>
+		{{{body}}}
+	</body>
+</html>

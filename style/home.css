@@ -1,0 +1,83 @@
+/*body { 
+	background-color:maroon;
+	display:flex;
+	justify-content: center;
+}*/
+* {
+	box-sizing: border-box;
+	background-color:none;
+}
+body {
+	margin: 0;
+}
+h1{
+	font-color: white;
+	text-align: center;
+	font-family: "Courier New", "Lucida Console", monospace;
+}
+i {
+	margin: auto;
+	font-size: 200px;
+	padding: 15px;
+	border-radius: 10%;
+}
+i:hover {
+	background-color: #666565;
+	cursor: pointer; 
+}
+div{ 
+	padding: 20px;
+}
+/*	Classes			*/
+
+.header{
+	padding: 20px;
+	text-align: center;
+}
+.content{
+	margin: auto;
+	text-align: center;
+	width: 754.2px;
+	height: 115px;
+	padding: 15px;
+}
+.typewritter h1 {
+	overflow: hidden;
+	color: yellow;
+	border-right: 5px solid;
+	border-left: 5px solid;
+	text-align: center;
+	white-space: nowrap;
+	margin: 131px auto;
+	letter-spacing: 6px;
+	animation: typing .75s steps(30,end),
+	blink-caret .5s step-end infinite;
+}
+.fas {
+	margin:auto;
+}
+.a {
+	overflow:hidden;
+	width: 0%;
+	border-left: none;
+	border-right:none;
+}
+/* animation: keyframe */
+@keyframes rainbow{
+	0% { color:#ff0000; } /*red */
+	16% { color:#db8009; } /*orange */
+	32% { color: #dbd409; } /*yellow*/
+	48% { color: #00ff51; } /* green*/
+	64% { color:#0091ff;} /* blue */
+	80% { color: #aa00ff;} /*indigo*/
+	100% { color: #ff0077;} /* pink*/
+}
+@keyframes typing{
+	from { width: 0 }
+	to { width:100% }
+}
+
+@keyframes blink-caret{
+	from, to { border-color: transparent }
+	50% { border-color: seagreen; }
+}
